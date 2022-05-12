@@ -1,14 +1,15 @@
 class Solution {
 public:
-    vector<string> generateParenthesis(int n) {
-        
-    vector<string> ans;        
-    Backtrack(0, n,n, "", ans);
+    
+    vector<string> ans;
+    vector<string> generateParenthesis(int n) {        
+            
+    Backtrack(0, n,n, "");
     return ans;
         
     }
     
-    void Backtrack(int i, int opened, int closed, string s, vector<string> &ans)
+    void Backtrack(int i, int opened, int closed, string s)
     {
         if(opened == 0 && closed == 0)
         {
@@ -18,11 +19,11 @@ public:
         
         if(opened)
         {
-            Backtrack(i+1, opened-1, closed, s+'(', ans);
+            Backtrack(i+1, opened-1, closed, s+'(');
         }
         if(closed > opened) 
         {
-            Backtrack(i+1, opened, closed-1, s+')', ans);     
+            Backtrack(i+1, opened, closed-1, s+')');     
         }
     }
 };
