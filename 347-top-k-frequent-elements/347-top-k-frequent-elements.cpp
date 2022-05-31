@@ -14,13 +14,11 @@ public:
         for(auto p: freq)
         {
             pq.push({p.second, p.first});
-        }
-        
-        while(ans.size() < k)
-        {
-            pair<int,int> p = pq.top();
-            ans.push_back(p.second);
-            pq.pop();
+            if(pq.size() > freq.size()-k)
+            {
+                ans.push_back(pq.top().second);
+                pq.pop();
+            }
         }
         
         return ans;
