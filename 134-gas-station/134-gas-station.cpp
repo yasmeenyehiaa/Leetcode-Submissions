@@ -3,6 +3,7 @@ public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
         
         int tot = 0, index = 0, mn = 0;
+        
         for(int i=0; i<gas.size(); i++)
         {
             tot += gas[i] - cost[i];
