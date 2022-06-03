@@ -8,7 +8,7 @@ public:
             char ch = strs[0][i];
             for(auto s: strs)
             {
-                if( i == s.size() || s[i] != ch )
+                if(i == s.size() || s[i] != ch)
                 {
                     return ans;
                 }
