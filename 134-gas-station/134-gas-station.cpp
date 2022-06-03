@@ -13,6 +13,7 @@ public:
                 mn = tot;
             }   
         }        
+        
         if(tot >= 0)
         {
             return index;
