@@ -12,11 +12,13 @@ public:
                 {
                     j++;
                 }
+                
                 if(j == n)
                 {
                     break;
                 }
-                nums[i] = nums[j]; nums[j] = 0;
+                nums[i] = nums[j];
+                nums[j] = 0;
             }
         }
     }
