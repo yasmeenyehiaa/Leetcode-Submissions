@@ -6,15 +6,15 @@ public:
         
         for(int i=0; i<strs[0].size(); i++)
         {
-            char c = strs[0][i];
+            char ch = strs[0][i];
             for(auto s: strs)
             {
-                if(i == s.size() || s[i] != c)
+                if(i == s.size() || s[i] != ch)
                 {
                     return ans;
                 }
             }
-            ans += c;
+            ans += ch;
         }
         return ans;
         
