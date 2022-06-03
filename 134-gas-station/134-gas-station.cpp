@@ -11,6 +11,7 @@ public:
                 index = i+1;
                 mn = tot;
             }
+            
         }
         
         if(tot >= 0)
