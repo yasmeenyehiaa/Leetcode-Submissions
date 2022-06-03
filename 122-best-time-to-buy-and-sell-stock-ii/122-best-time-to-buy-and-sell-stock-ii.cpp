@@ -7,6 +7,7 @@ public:
         {
             if (price[i] > price[i - 1]) 
                 ans += price[i] - price[i - 1];
+            
         }
         return ans;
     }
