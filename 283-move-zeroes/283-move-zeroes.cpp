@@ -10,6 +10,7 @@ public:
                 nums[j++] = nums[i];
             }
         }
+        
         for(; j<n; j++)
         {
             nums[j] = 0;
