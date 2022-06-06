@@ -13,7 +13,6 @@ public:
             }
             tmp += s[i];
         }
-        
         return tmp.size();        
     }
 };
