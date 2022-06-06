@@ -3,6 +3,7 @@ public:
     int lengthOfLastWord(string s) {
         
         string tmp = "";
+        
         for(int i=0; i<s.size(); i++)
         {
             if(s[i] == ' ')
