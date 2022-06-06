@@ -28,6 +28,7 @@ public:
         {
             return NULL;
         }        
+        
         return solve(nums, 0, nums.size()-1);
     }
 };
