@@ -17,7 +17,6 @@ public:
         {
             return;
         }
-        
         if(root->val == x)
         {
             d_x = d;
