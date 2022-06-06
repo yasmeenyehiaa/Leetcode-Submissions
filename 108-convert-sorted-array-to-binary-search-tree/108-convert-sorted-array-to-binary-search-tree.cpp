@@ -19,6 +19,7 @@ public:
         }
         int mid = (l+r)/2;        
         return new TreeNode(nums[mid], solve(nums, l, mid-1), solve(nums, mid+1, r));
+        
     }    
     TreeNode* sortedArrayToBST(vector<int>& nums)
     {
