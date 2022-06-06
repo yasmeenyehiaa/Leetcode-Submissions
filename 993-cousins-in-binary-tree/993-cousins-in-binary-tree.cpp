@@ -36,5 +36,6 @@ public:
         return p_x != p_y && d_x == d_y;
     }    
 private:
+    
     int p_x = -1, p_y = -1, d_x = -1, d_y = -1;
 };
