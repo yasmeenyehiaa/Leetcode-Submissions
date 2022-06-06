@@ -25,8 +25,7 @@ public:
         if(nums.size() == 0)
         {
             return NULL;
-        }
-        
+        }        
         return solve(nums, 0, nums.size()-1);
     }
 };
