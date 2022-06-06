@@ -22,14 +22,12 @@ public:
         {
             d_x = d;
             p_x = par;
-        }
-          
+        }          
         if(root->val == y)
         {
             d_y = d;
             p_y = par;
-        }
-        
+        }        
         solve(root->left, x, y, d+1, root->val);
         solve(root->right, x, y, d+1, root->val);        
     }
