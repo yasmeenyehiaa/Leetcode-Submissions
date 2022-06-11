@@ -19,8 +19,7 @@ public:
             {
                 solve(root->left, val);
             }
-            else 
-                root->left = new TreeNode{val};
+            else root->left = new TreeNode{val};
         }
         else
         {
