@@ -27,8 +27,7 @@ public:
             {
                 solve(root->right, val);
             }
-            else 
-                root->right = new TreeNode{val};
+            else root->right = new TreeNode{val};
         }
     }
     TreeNode* bstFromPreorder(vector<int>& preorder) 
