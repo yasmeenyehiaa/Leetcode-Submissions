@@ -29,8 +29,7 @@ public:
                 if(i == sz-1)
                 {
                     ans.push_back(top->val);
-                }
-                
+                }                
                 if(top->left)
                 {
                     q.push(top->left);
