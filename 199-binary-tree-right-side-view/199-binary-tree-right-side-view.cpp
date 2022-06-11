@@ -30,6 +30,7 @@ public:
                 {
                     ans.push_back(top->val);
                 }
+                
                 if(top->left)
                 {
                     q.push(top->left);
