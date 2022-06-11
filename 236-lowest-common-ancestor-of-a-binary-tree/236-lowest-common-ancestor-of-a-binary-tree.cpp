@@ -23,7 +23,6 @@ public:
         {
             if(left) return left;
             else return right;
-        }
-        
+        }        
     }
 };
