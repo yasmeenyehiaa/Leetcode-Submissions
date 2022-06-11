@@ -29,7 +29,8 @@ public:
     }
     vector<string> binaryTreePaths(TreeNode* root) 
     {
-        rec(root, "");    
+        rec(root, "");
+        
         return ans;
     }
 };
