@@ -15,14 +15,13 @@ public:
     void rec(TreeNode* root, string s)
     {
         if(root == NULL) return;
-
+        
         s += to_string(root->val);
         if(!root->left && !root->right)
         {
             ans.push_back(s);
             return;
         }
-        
         s+= "->";
         rec(root->left, s);
         rec(root->right, s);
