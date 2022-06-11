@@ -22,6 +22,7 @@ public:
             ans.push_back(s);
             return;
         }
+        
         s+= "->";
         rec(root->left, s);
         rec(root->right, s);
