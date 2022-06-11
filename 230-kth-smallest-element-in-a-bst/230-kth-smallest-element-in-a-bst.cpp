@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-    int ans;
+    int ans=0;
     
     void inorder(TreeNode* root, int &k)
     {
