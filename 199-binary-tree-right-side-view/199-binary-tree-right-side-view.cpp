@@ -19,13 +19,12 @@ public:
             return ans;
         }
         q.push(root);
-        TreeNode* top;
         while(!q.empty())
         {
             int sz = q.size();
             for(int i=0; i<sz; i++)
             {
-                top = q.front();
+                TreeNode* top = q.front();
                 q.pop();
                 if(i == sz-1)
                 {
