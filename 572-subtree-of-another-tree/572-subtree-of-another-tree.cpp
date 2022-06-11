@@ -30,7 +30,8 @@ public:
         {
             return false;
         }        
-        if(solve(root, subRoot)) return true;
+        if(solve(root, subRoot)) 
+            return true;
         
         return isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
         
