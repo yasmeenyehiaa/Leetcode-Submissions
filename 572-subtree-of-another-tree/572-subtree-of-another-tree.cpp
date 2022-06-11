@@ -29,8 +29,7 @@ public:
         if((root == NULL && subRoot != NULL) || (root != NULL && subRoot == NULL) )
         {
             return false;
-        }
-        
+        }        
         return solve(root, subRoot) || isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
         
     }
