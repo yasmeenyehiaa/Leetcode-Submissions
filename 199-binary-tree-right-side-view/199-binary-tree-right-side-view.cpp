@@ -24,8 +24,7 @@ public:
             int sz = q.size();
             for(int i=0; i<sz; i++)
             {
-                TreeNode* top = q.front();
-                q.pop();
+                TreeNode* top = q.front();    q.pop();
                 if(i == sz-1)
                 {
                     ans.push_back(top->val);
