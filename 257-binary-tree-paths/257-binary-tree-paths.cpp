@@ -22,11 +22,13 @@ public:
             ans.push_back(s);
             return;
         }
+        
         s+= "->";
         rec(root->left, s);
         rec(root->right, s);
     }
-    vector<string> binaryTreePaths(TreeNode* root) {
+    vector<string> binaryTreePaths(TreeNode* root) 
+    {
         rec(root, "");    
         return ans;
     }
