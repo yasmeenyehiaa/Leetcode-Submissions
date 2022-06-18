@@ -7,8 +7,7 @@ public:
         for(int i=0; i<nums1.size(); i++)
         {
             cnt1[nums1[i]]++;
-        }
-        
+        }        
         for(int i=0; i<nums2.size(); i++)
         {
             if(cnt1[nums2[i]])
