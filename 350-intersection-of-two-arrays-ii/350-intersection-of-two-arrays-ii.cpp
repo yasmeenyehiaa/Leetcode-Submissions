@@ -16,7 +16,6 @@ public:
                 cnt1[nums2[i]]--;
             }
         }        
-        return ans;
-        
+        return ans;        
     }
 };
