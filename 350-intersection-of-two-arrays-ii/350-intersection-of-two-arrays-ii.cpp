@@ -1,7 +1,7 @@
 class Solution {
 public:
-    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
-        
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) 
+    {        
         map<int,int> cnt1;
         vector<int> ans;
         for(int i=0; i<nums1.size(); i++)
