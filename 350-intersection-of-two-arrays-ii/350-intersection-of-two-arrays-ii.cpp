@@ -15,8 +15,7 @@ public:
                 ans.push_back(nums2[i]);
                 cnt1[nums2[i]]--;
             }
-        }
-        
+        }        
         return ans;
         
     }
