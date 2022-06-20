@@ -35,10 +35,8 @@ public:
         
             else return sign*num;
             
-            if(num>INT_MAX && sign==1)
-                return INT_MAX;
-            else if(num>INT_MAX && sign==-1)  
-                return INT_MIN;
+            if(num>INT_MAX && sign==1) return INT_MAX;
+            else if(num>INT_MAX && sign==-1)  return INT_MIN;
         }
         return sign*num;
     }
