@@ -4,7 +4,7 @@ public:
         int n = s.size(), sign = 1;
         long long int num = 0;
         
-        while(s[0]==' ')  s.erase(s.begin());
+        while(s[0]==' ')   s.erase(s.begin());
         
         if(s[0]=='-')
         {
