@@ -20,6 +20,7 @@ public:
         {
             return false;
         }
+        
         return isValidBST(root->left, left, root) && isValidBST(root->right, root, right);
         
     }
