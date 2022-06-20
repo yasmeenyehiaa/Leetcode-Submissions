@@ -18,6 +18,7 @@ public:
         
         if(root->left) getSum(root->left, curTotal);
         if(root->right) getSum(root->right, curTotal);
+        
         if(!root->left && !root->right)
         {
             ans += curTotal;
