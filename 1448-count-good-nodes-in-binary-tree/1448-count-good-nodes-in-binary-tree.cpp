@@ -21,8 +21,8 @@ public:
         mx = max(mx, root->val);        
         return isGood(root->left, mx) + isGood(root->right, mx) + (mx == root->val); 
     }
-    int goodNodes(TreeNode* root) {
-        
+    int goodNodes(TreeNode* root) 
+    {        
         return isGood(root->left, root->val) + isGood(root->right, root->val) + 1;       
     }
 };
