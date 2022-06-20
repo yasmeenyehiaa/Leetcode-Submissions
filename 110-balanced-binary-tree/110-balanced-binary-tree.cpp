@@ -18,6 +18,7 @@ public:
             return 0;
         }
         int left = getHeight(root->left), right = getHeight(root->right);
+       
         if(abs(right - left) <= 1)
         {
             return max(left, right)+1;
