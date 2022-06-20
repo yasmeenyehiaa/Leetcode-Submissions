@@ -1,10 +1,8 @@
 class Solution {
 public:
     int myAtoi(string s) {
-        int n=s.size();
-        long long int num=0;
-        int sign=1;
-        
+        int n = s.size(), sign = 1;
+        long long int num = 0;
         
         while(s[0]==' ')
         {
@@ -31,8 +29,7 @@ public:
             {
                 num *= 10;
                 num += s[i]-'0';      
-            }
-        
+            }        
             else return sign*num;
             
             if(num>INT_MAX && sign==1) return INT_MAX;
