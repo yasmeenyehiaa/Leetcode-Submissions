@@ -29,8 +29,7 @@ public:
                 
                 if(tmp->left) q.push(tmp->left);
                 if(tmp->right) q.push(tmp->right);                
-            }
-            
+            }            
             ans.push_back(v);
         }
         return ans;       
