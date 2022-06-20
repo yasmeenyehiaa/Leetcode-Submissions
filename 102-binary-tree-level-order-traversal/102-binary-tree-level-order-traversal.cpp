@@ -25,8 +25,7 @@ public:
             {
                 TreeNode* tmp = q.front();
                 q.pop();
-                v.push_back(tmp->val);
-                
+                v.push_back(tmp->val);                
                 if(tmp->left) q.push(tmp->left);
                 if(tmp->right) q.push(tmp->right);                
             }            
