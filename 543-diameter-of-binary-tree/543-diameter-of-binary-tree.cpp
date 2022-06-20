@@ -12,6 +12,7 @@
 class Solution {
 public:
     int ans = 0;
+    
     int getDiameter(TreeNode* root, int len)
     {
         if(root == NULL) return 0;
