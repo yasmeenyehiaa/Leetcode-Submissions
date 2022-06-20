@@ -24,7 +24,8 @@ public:
             ans += curTotal;
         }
     }
-    int sumNumbers(TreeNode* root) {
+    int sumNumbers(TreeNode* root) 
+    {
         
         getSum(root, 0);  
         return ans;
