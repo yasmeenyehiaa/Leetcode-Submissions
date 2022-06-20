@@ -19,6 +19,7 @@ public:
         ans = max(ans, l+r+1);
         return max(l,r)+1;
     }
+    
     int diameterOfBinaryTree(TreeNode* root) 
     {        
         getDiameter(root, 0);
