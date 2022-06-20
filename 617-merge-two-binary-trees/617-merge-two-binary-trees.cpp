@@ -11,8 +11,7 @@
  */
 class Solution {
 public:
-    TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) 
-    {
+    TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
         if(root1 == NULL) 
             return root2;
         if(root2 == NULL) 
