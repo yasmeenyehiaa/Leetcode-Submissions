@@ -18,7 +18,6 @@ public:
         {
             return 0;
         }
-         
         int l = getDiameter(root->left, len), r =getDiameter(root->right, len);
         ans = max(ans, l+r+1);
         return max(l,r)+1;
