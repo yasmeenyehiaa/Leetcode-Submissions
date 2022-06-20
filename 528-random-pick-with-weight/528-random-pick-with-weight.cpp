@@ -8,7 +8,6 @@ public:
         {
             v.push_back(v[i-1] + w[i]);
         }
-        
     }
     
     int pickIndex() {
