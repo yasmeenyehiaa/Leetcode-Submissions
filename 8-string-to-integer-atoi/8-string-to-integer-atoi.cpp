@@ -20,8 +20,7 @@ public:
             s.erase(s.begin());
         }
         
-        if(!isdigit(s[0]))
-            return 0;
+        if(!isdigit(s[0])) return 0;
         
         for(int i=0; i<n; i++)
         {
