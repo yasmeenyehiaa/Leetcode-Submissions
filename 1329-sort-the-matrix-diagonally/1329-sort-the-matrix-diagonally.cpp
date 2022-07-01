@@ -22,7 +22,7 @@ public:
             arr[mat[r++][c++]]++;
         }        
         r = row, c = col;
-        for(int i=1; i<101; i++)
+        for(int i=1; i<=100; i++)
         {
             if(arr[i])
             {
