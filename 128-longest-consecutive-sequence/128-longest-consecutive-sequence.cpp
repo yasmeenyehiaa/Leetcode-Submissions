@@ -6,8 +6,7 @@ public:
         for(int i=0; i<nums.size(); i++)
         {
             cnt[nums[i]]++;
-        }
-        
+        }        
         for(auto p: cnt)
         {
             int n = p.first;
