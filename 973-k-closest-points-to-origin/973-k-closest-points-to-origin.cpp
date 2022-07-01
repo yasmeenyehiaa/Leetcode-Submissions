@@ -1,14 +1,14 @@
 class Solution {
 public:
-    float dist(int x, int y)
+    int dist(int x, int y)
     {
-        return sqrt(x*x + y*y);
+        return x*x + y*y;
     }
     vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
         
         vector<vector<int>> ans;
         
-        priority_queue<pair<float, pair<int,int>>> pq;
+        priority_queue<pair<int, pair<int,int>>> pq;
         
         for(int i=0; i<points.size(); i++)
         {
