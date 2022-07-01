@@ -23,8 +23,7 @@ public:
             v.push_back(pq.top().second.second);
             pq.pop();
             ans.push_back(v);
-        }
-        
+        }        
         return ans;
     }
 };
