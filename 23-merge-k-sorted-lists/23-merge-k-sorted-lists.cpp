@@ -10,8 +10,8 @@
  */
 class Solution {
 public:
-ListNode* mergeKLists(vector<ListNode*>& lists) {
-    
+ListNode* mergeKLists(vector<ListNode*>& lists) 
+{    
     priority_queue<int,vector<int>,greater<int>>pq;
     ListNode* start = NULL, *end = NULL;
     
@@ -30,7 +30,7 @@ ListNode* mergeKLists(vector<ListNode*>& lists) {
         else
         {
             end->next = new ListNode(pq.top());
-            end= end->next;
+            end = end->next;
         }
         pq.pop();
     }
