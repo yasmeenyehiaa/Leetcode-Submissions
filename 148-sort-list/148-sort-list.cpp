@@ -21,7 +21,8 @@ public:
 				curr->next = l2;
 				l2 = l2->next;
 			}
-			else{
+			else
+            {
 				curr->next = l1;
 				l1 = l1->next;
 			}
@@ -56,8 +57,7 @@ public:
 
 		temp->next = NULL;
 
-		ListNode* l1 = sortList(head);
-		ListNode* l2 = sortList(slow);
+		ListNode* l1 = sortList(head), *l2 = sortList(slow);
 
 		return mergeList(l1,l2);
 	}
