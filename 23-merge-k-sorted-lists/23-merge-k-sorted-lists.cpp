@@ -22,8 +22,7 @@ ListNode* mergeKLists(vector<ListNode*>& lists) {
             pq.push(head->val);
             head = head->next;
         }
-    }
-    
+    }    
     while(!pq.empty())
     {
         if(start==NULL)  start = end = new ListNode(pq.top());
