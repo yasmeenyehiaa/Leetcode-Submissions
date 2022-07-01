@@ -4,7 +4,8 @@ public:
     {        
         for(auto l : letters)
         {
-            if(l <= target) continue;
+            if(l <= target) 
+                continue;
             else return l;
         }
         return letters[0];        
