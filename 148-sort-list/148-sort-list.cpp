@@ -28,7 +28,6 @@ public:
 			}
 			curr = curr->next;
 		}
-
 		if(l1 != NULL)
         {
 			curr->next = l1;
