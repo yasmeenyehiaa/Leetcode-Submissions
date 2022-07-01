@@ -16,8 +16,7 @@ public:
                 arr1[j++] = arr2[i];
                 frq[arr2[i]]--;
             }
-        }
-        
+        }        
         for(auto p: frq)
         {
             for(int i=0; i<p.second; i++) arr1[j++] = p.first;
