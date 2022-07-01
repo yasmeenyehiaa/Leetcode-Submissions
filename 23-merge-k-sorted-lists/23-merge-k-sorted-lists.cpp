@@ -23,8 +23,7 @@ ListNode* mergeKLists(vector<ListNode*>& lists) {
         }
     }
     
-    ListNode* start = NULL;
-    ListNode* end = NULL;
+    ListNode* start = NULL, *end = NULL;
     
     while(!pq.empty())
     {
