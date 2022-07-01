@@ -12,11 +12,9 @@ public:
         for(int r=0; r<m; r++)
         {
             sort(mat, r, 0);
-        }
-        
+        }        
         return mat;
-    }
-    
+    }    
     void sort(vector<vector<int>>& mat, int row, int col)
     {
         int arr[101] = {0};
