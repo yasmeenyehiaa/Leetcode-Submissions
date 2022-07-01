@@ -8,8 +8,6 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-
-
 class Solution 
 {
 public:
@@ -43,7 +41,6 @@ public:
 
 		return ptr->next;
 	}
-    
 	ListNode* sortList(ListNode* head) 
     {		
 		if(head == NULL || head->next == NULL) return head;
@@ -55,10 +52,8 @@ public:
 			slow = slow->next;
 			fast = fast->next->next;
 		}
-
 		temp->next = NULL;
 		ListNode* l1 = sortList(head), *l2 = sortList(slow);
-
 		return mergeList(l1,l2);
 	}
 };
