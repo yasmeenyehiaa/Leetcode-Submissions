@@ -6,8 +6,7 @@ public:
         for(int c=0; c<n; c++)
         {
             sort(mat, 0, c);
-        }
-        
+        }        
         for(int r=0; r<m; r++)
         {
             sort(mat, r, 0);
@@ -22,7 +21,7 @@ public:
         {
             arr[mat[r++][c++]]++;
         }        
-        r=row, c =col;
+        r = row, c = col;
         for(int i=1; i<101; i++)
         {
             if(arr[i])
