@@ -35,5 +35,4 @@ ListNode* mergeKLists(vector<ListNode*>& lists)
         pq.pop();
     }
     return start;
-}
-};
+} };
