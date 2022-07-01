@@ -2,13 +2,13 @@ class Solution {
 public:
     vector<int> relativeSortArray(vector<int>& arr1, vector<int>& arr2) {
         
+        int j = 0;
         map<int,int> frq;
         for(int i=0; i<arr1.size(); i++)
         {
             frq[arr1[i]]++;
         }
         
-        int j = 0;
         for(int i=0; i<arr2.size(); i++)
         {
             while(frq[arr2[i]])
