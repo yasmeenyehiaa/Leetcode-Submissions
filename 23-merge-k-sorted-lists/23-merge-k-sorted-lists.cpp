@@ -13,6 +13,7 @@ public:
 ListNode* mergeKLists(vector<ListNode*>& lists) {
     
     priority_queue<int,vector<int>,greater<int>>pq;
+    ListNode* start = NULL, *end = NULL;
     for(int i=0;i<lists.size();i++)
     {
         ListNode* head = lists[i];
@@ -22,8 +23,6 @@ ListNode* mergeKLists(vector<ListNode*>& lists) {
             head = head->next;
         }
     }
-    
-    ListNode* start = NULL, *end = NULL;
     
     while(!pq.empty())
     {
