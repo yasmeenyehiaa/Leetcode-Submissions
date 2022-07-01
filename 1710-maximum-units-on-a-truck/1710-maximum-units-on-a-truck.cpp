@@ -8,8 +8,7 @@ public:
         for(auto p: boxTypes)
         {
             pq.push({p[1], p[0]});
-        }
-        
+        }        
         while(truckSize > 0 && !pq.empty())
         {
             int u = pq.top().first , b = pq.top().second;
