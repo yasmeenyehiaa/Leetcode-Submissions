@@ -6,6 +6,7 @@ public:
         {
             if(l > target) return l;
         }
+        
         return letters[0];        
     }
 };
