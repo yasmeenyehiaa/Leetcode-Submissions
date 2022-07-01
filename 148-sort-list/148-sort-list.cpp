@@ -56,7 +56,6 @@ public:
 		}
 
 		temp->next = NULL;
-
 		ListNode* l1 = sortList(head), *l2 = sortList(slow);
 
 		return mergeList(l1,l2);
