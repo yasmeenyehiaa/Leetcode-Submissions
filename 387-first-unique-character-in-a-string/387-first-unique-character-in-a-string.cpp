@@ -1,14 +1,14 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
-        map<char, int> frq;
+        map<char, int> cnt;
         for(int i=0; i<s.size(); i++)
         {
-            frq[s[i]]++;
+            cnt[s[i]]++;
         }
         for(int i=0; i<s.size(); i++)
         {
-           if(frq[s[i]] == 1)
+           if(cnt[s[i]] == 1)
            {
                return i;
            }
