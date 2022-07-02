@@ -4,8 +4,8 @@ public:
               
         int maxHeight = 0, maxWidth = 0, mod = 1e9+7;        
         horizontalCuts.push_back(0);
-        verticalCuts.push_back(0);
         horizontalCuts.push_back(h);
+        verticalCuts.push_back(0);        
         verticalCuts.push_back(w);
         
         sort(horizontalCuts.begin(), horizontalCuts.end());
@@ -19,6 +19,7 @@ public:
         {
             maxWidth = max(maxWidth, verticalCuts[i]-verticalCuts[i-1]);
         }        
+        
         return (1LL*maxHeight*maxWidth) % mod;
     }
 };
