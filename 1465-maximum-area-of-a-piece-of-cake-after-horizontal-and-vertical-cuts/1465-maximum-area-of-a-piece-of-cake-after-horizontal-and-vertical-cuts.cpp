@@ -19,8 +19,7 @@ public:
         for(int i=1; i<verticalCuts.size(); i++)
         {
             maxWidth = max(maxWidth, verticalCuts[i]-verticalCuts[i-1]);
-        }
-        
+        }        
         return (1LL*maxHeight*maxWidth) % mod;
     }
 };
