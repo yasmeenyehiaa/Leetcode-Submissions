@@ -3,7 +3,7 @@ public:
     int c, o, n, m, dx[4] = {0,1,-1,0} , dy[4] = {1,0,0,-1};
     bool valid(int x, int y)
     {
-        return x>=0 && x<n && y>=0 && y<m;
+        return (x>=0 && x<n && y>=0 && y<m);
     }
     void dfs(vector<vector<int>>& image, int x, int y)
     {
