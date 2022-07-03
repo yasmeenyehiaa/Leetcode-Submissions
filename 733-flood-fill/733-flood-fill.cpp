@@ -21,7 +21,6 @@ public:
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
         c = color, o = image[sr][sc], n = image.size(), m = image[0].size();
         if(c!=o) dfs(image, sr, sc);
-        
         return image;
     }
 };
