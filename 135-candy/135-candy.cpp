@@ -1,10 +1,9 @@
 class Solution {
 public:
-    int candy(vector<int>& ratings) {
-        
+    int candy(vector<int>& ratings) 
+    {        
         int ans = 0, n = ratings.size();
-        int left[n], right[n];
-        
+        int left[n], right[n];        
         for(int i=0; i<n; i++)
         {
             left[i] = right[i] = 1;
