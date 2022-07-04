@@ -4,6 +4,7 @@ public:
     {        
         int ans = 0, n = ratings.size();
         int left[n], right[n];        
+        
         for(int i=0; i<n; i++)  left[i] = right[i] = 1;
         for(int i=1; i<n; i++)
         {
