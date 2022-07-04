@@ -25,7 +25,6 @@ public:
         for(int i=0; i<n; i++)
         {
             ans += max(right[i], left[i]);
-            //cout << left[i] << " " << right[i] << endl;
         }
         return ans;
     }
