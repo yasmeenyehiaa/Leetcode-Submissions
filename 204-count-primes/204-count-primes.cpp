@@ -6,7 +6,7 @@ public:
         primes[0] = primes[1] = 0;
         for(int i=2; i<n; i++)
         {
-            if(primes[i] == true)
+            if(primes[i])
             {
                 ans++;
                 for(int j=2; i*j<=n; j++)
