@@ -7,7 +7,7 @@ public:
         col[src] = c;
         for(auto a: graph[src])
         {
-            if(!vis[a]) dfs(a, !c, graph);
+            if(vis[a] == 0) dfs(a, !c, graph);
             else if(col[a] == c) ok = 0;
         }        
     }
