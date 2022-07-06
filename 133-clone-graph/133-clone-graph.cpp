@@ -26,6 +26,7 @@ public:
         
         if(node == NULL) return NULL;
         if(graph[node]) return graph[node];
+        
         Node* root = new Node(node->val);
         graph[node] = root;
         
