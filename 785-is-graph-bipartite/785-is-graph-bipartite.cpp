@@ -15,7 +15,7 @@ public:
         
         for(int i=0; i<graph.size(); i++)
         {
-            if(!vis[i])  
+            if(vis[i] == 0)  
             {
                 dfs(i,0, graph);
             }
