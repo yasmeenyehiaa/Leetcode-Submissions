@@ -24,11 +24,7 @@ public:
         }        
         for(int i=0; i<=n; i++)
         {
-            if(vis[i]) 
-            {
-                ctr++;
-                cout << i << " ";
-            }
+            if(vis[i]) ctr++;
         }
         
         return (ctr == n);
