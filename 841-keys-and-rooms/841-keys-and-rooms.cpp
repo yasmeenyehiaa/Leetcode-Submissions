@@ -4,8 +4,8 @@ public:
         
         int ctr = 0, n = rooms.size();
         queue<int> q;
+        q.push(0);  
         bool vis[1005] = {0};
-        q.push(0);        
         
         while(q.size() != 0)
         {
