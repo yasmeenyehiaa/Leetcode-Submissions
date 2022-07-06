@@ -8,7 +8,7 @@ public:
         for(auto a: graph[src])
         {
             if(!vis[a]) dfs(a, !c, graph);
-            else if(c == col[a]) ok = 0;
+            else if(col[a] == c) ok = 0;
         }        
     }
     bool isBipartite(vector<vector<int>>& graph) {
