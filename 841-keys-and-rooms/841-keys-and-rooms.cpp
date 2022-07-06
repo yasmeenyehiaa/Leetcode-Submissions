@@ -1,7 +1,7 @@
 class Solution {
 public:
-    bool canVisitAllRooms(vector<vector<int>>& rooms) {
-        
+    bool canVisitAllRooms(vector<vector<int>>& rooms) 
+    {        
         int ctr = 0, n = rooms.size();
         queue<int> q;
         q.push(0);  
