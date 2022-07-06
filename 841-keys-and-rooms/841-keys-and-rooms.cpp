@@ -6,8 +6,7 @@ public:
         queue<int> q;
         bool vis[1005] = {0};
         
-        q.push(0);
-        vis[0] = 1;        
+        q.push(0);        
         while(q.size() != 0)
         {
             int x = q.front();
