@@ -7,7 +7,7 @@ public:
         q.push(0);  
         bool vis[1005] = {0};
         
-        while(q.size() != 0)
+        while(q.size())
         {
             int x = q.front();
             q.pop();
@@ -20,7 +20,8 @@ public:
                     q.push(rooms[x][i]);
                 }
             }
-        }        
+        }    
+        
         for(int i=0; i<=n; i++) if(vis[i]) ctr++;
         
         return (ctr == n);
