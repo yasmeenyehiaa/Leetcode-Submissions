@@ -21,8 +21,7 @@ public:
                     q.push(rooms[x][i]);
                 }
             }
-        }
-        
+        }        
         for(int i=0; i<=n; i++)
         {
             if(vis[i]) 
@@ -32,6 +31,6 @@ public:
             }
         }
         
-        return ctr == n;
+        return (ctr == n);
     }
 };
