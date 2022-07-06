@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool col[105], vis[105], ok = 1;
+    bool col[102], vis[102], ok = 1;
     void dfs(int src, bool c, vector<vector<int>>& graph)
     {
         vis[src] = 1;
