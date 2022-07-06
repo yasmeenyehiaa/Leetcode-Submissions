@@ -9,14 +9,16 @@ public:
         {
             if(!vis[a]) dfs(a, !c, graph);
             else if(c == col[a]) ok = 0;
-        }
-        
+        }        
     }
     bool isBipartite(vector<vector<int>>& graph) {
         
         for(int i=0; i<graph.size(); i++)
         {
-            if(!vis[i])  dfs(i,0, graph);
+            if(!vis[i])  
+            {
+                dfs(i,0, graph);
+            }
         }
         return ok;
     }
