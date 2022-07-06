@@ -13,10 +13,12 @@ public:
             vis[x] = 1;
             for(int i=0; i<rooms[x].size(); i++)
             {
-                if(!vis[rooms[x][i]])  q.push(rooms[x][i]);
+                if(!vis[rooms[x][i]])  
+                    q.push(rooms[x][i]);
             }
         }    
-        for(int i=0; i<=n; i++) if(vis[i]) ctr++;
+        for(int i=0; i<=n; i++) 
+            if(vis[i]) ctr++;
         return (ctr == n);
     }
 };
