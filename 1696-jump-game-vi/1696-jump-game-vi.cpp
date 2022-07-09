@@ -2,8 +2,8 @@ class Solution {
 public:    
     int maxResult(vector<int>& nums, int k) 
     {
-        int n = nums.size();
         deque<int> d{0};
+        int n = nums.size();
         for(int i=1; i<n; i++) 
         {
             if(d.front()+k < i) 
