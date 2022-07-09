@@ -6,8 +6,7 @@ public:
         int n = nums.size();
         for(int i=1; i<n; i++) 
         {
-            if(d.front()+k < i) 
-                d.pop_front();
+            if(d.front()+k < i) d.pop_front();
             nums[i] += nums[d.front()];
             while(!d.empty() && nums[d.back()] <= nums[i])  d.pop_back();
             d.push_back(i);
