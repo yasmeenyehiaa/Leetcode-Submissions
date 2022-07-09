@@ -8,10 +8,7 @@ public:
         {
             if(d.front()+k < i) d.pop_front();
             nums[i] += nums[d.front()];
-            while(!d.empty() && nums[d.back()] <= nums[i])
-            {
-                d.pop_back();
-            }
+            while(!d.empty() && nums[d.back()] <= nums[i]) d.pop_back();
             d.push_back(i);
         }
         return nums[n-1];
