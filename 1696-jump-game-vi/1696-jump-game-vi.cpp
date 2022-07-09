@@ -3,13 +3,16 @@ public:
     int maxResult(vector<int>& nums, int k) 
     {
         int n = nums.size();
-        multiset<int, greater<int>> s;
-        for(int i=0; i<n; i++)
+        deque<int> d{0};
+        for(int i=1; i<n; i++)
         {
-            int val = s.empty()? 0 : *s.begin();
-            nums[i] += val;
-            s.insert(nums[i]);
-            if(s.size() > k) s.erase(s.find(nums[i-k]));
+            if(d.front()+k < i) d.pop_front();
+            nums[i] += nums[d.front()];
+            while(!d.empty() && nums[d.back()] <= nums[i])
+            {
+                d.pop_back();
+            }
+            d.push_back(i);
         }
         return nums[n-1];
     }
