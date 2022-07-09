@@ -1,7 +1,7 @@
 class Solution {
-public:
-    
-    int maxResult(vector<int>& nums, int k) {
+public:    
+    int maxResult(vector<int>& nums, int k) 
+    {
         int n = nums.size();
         multiset<int, greater<int>> s;
         for(int i=0; i<n; i++)
