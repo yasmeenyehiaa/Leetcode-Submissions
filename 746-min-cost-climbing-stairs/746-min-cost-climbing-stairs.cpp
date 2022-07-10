@@ -10,8 +10,8 @@ public:
     }
     int minCostClimbingStairs(vector<int>& cost) {
         memset(dp, -1, sizeof dp);
-        n = cost.size();
         c = cost;
+        n = cost.size();
         return min(solve(0), solve(1));
     }
 };
