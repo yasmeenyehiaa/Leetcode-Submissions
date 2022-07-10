@@ -8,10 +8,7 @@ public:
         if(n%2 == 0) i--;
         while( (i >= 0 || j > i) && k < n)
         {
-            if(k%2)
-            {
-                 tmp[k++] = nums[j--];
-            }
+            if(k%2) tmp[k++] = nums[j--];
             else tmp[k++] = nums[i--];
         }
         nums = tmp;        
