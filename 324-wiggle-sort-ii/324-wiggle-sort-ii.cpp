@@ -8,13 +8,12 @@ public:
         if(n%2 == 0) i--;
         while( (i >= 0 || j > i) && k < n)
         {
-            if(k%2 == 0)
+            if(k%2)
             {
-                 tmp[k++] = nums[i--];
+                 tmp[k++] = nums[j--];
             }
-            else tmp[k++] = nums[j--];
+            else tmp[k++] = nums[i--];
         }
-        nums = tmp;
-        
+        nums = tmp;        
     }
 };
