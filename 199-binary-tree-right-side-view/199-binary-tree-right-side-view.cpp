@@ -16,6 +16,7 @@ public:
         vector<int> ans;
         if(root == NULL) return ans;
         q.push(root);
+        
         while(!q.empty())
         {
             int sz = q.size();
