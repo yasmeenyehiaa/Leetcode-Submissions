@@ -1,7 +1,7 @@
 class Solution {
 public:
-    int n, dp[305];
     string str;
+    int n, dp[305];
     bool solve(int idx, vector<string> wordDict)
     {
         if(idx == n) return true;
