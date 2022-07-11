@@ -16,8 +16,8 @@ public:
     }
     bool wordBreak(string s, vector<string>& wordDict) {
         n = s.size();
-        str  = s;
         memset(dp, -1, sizeof dp);
+        str  = s;
         return solve(0, wordDict);
     }
 };
