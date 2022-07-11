@@ -9,8 +9,7 @@ public:
         for(int i=idx; i<n; i++)
         {
             string tmp = str.substr(idx, i-idx+1);
-            if(find(wordDict.begin(), wordDict.end(), tmp) != wordDict.end() && solve(i+1, wordDict))
-                return dp[idx] = true;
+            if(find(wordDict.begin(), wordDict.end(), tmp) != wordDict.end() && solve(i+1, wordDict)) return dp[idx] = true;
         }
         return dp[idx] = false;
     }
