@@ -2,14 +2,14 @@ class Solution {
 public:
     int n, dp[305];
     string str;
-    bool solve(int idx, set<string> wordDict)
+    bool solve(int idx, vector<string> wordDict)
     {
         if(idx == n) return true;
         if(dp[idx] != -1) return dp[idx];
         for(int i=idx; i<n; i++)
         {
             string tmp = str.substr(idx, i-idx+1);
-            if(wordDict.count(tmp) && solve(i+1, wordDict))
+            if(find(wordDict.begin(), wordDict.end(), tmp) != wordDict.end() && solve(i+1, wordDict))
                 return dp[idx] = true;
         }
         return dp[idx] = false;
@@ -17,9 +17,7 @@ public:
     bool wordBreak(string s, vector<string>& wordDict) {
         n = s.size();
         str  = s;
-        set<string> st;
-        for(auto w: wordDict) st.insert(w);
         memset(dp, -1, sizeof dp);
-        return solve(0, st);
+        return solve(0, wordDict);
     }
 };
