@@ -20,8 +20,8 @@ public:
         while(!q.empty())
         {
             vector<int> v;
-            int len = q.size();
-            for(int i=0; i<len; i++)
+            int l = q.size();
+            for(int i=0; i<l; i++)
             {
                 TreeNode* tmp = q.front();
                 q.pop();
