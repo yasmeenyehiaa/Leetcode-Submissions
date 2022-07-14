@@ -21,6 +21,7 @@ public:
         
         root->left  = solve(st, pos-1, preorder, inorder);
         root->right = solve(pos+1, ed, preorder, inorder);
+        
         return root;
     }
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
