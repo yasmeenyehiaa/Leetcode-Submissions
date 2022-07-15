@@ -30,7 +30,7 @@ public:
         {
             for(int j=0; j<m; j++)
             {
-                if(grid[i][j] == 1)
+                if(grid[i][j])
                 {
                     int x = dfs(i,j);
                     ans = max(ans, x);
