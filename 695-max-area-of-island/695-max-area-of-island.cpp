@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> v;
-    int n,m, dx[4]={0,0,1,-1}, dy[4]={-1,1,0,0};
+    int n,m,ans, dx[4]={0,0,1,-1}, dy[4]={-1,1,0,0};
     bool valid(int x, int y)
     {
         return (x>=0 && y>=0 && x<n && y<m);
@@ -25,7 +25,6 @@ public:
         v = grid;
         n = grid.size();
         m = grid[0].size();
-        int ans = 0;
         for(int i=0; i<n; i++)
         {
             for(int j=0; j<m; j++)
