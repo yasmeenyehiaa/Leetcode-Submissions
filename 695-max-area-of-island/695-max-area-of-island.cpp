@@ -14,7 +14,7 @@ public:
         for(int i=0; i<4; i++)
         {
             int nx = x+dx[i], ny = y+dy[i];
-            if(valid(nx, ny) && v[nx][ny] == 1)
+            if(valid(nx, ny) && v[nx][ny])
             {
                 ret += dfs(nx, ny);
             }
