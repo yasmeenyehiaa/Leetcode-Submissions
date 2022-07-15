@@ -7,10 +7,9 @@ public:
         q.push({beginWord, 1});
         while(!q.empty())
         {
-            pair<string,int> p = q.front();
+            string s = q.front().first;
+            int x = q.front().second;
             q.pop();
-            string s = p.first;
-            int x = p.second;
             if(s == endWord) return x;
             st.erase(s);
             for(int i=0; i<s.size(); i++)
