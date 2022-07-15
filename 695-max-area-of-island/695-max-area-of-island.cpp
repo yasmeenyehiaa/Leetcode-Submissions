@@ -4,7 +4,7 @@ public:
     int n,m, dx[4]={0,0,1,-1}, dy[4]={-1,1,0,0};
     bool valid(int x, int y)
     {
-        return x>=0 && y>=0 && x<n && y<m;
+        return (x>=0 && y>=0 && x<n && y<m);
     }
     int dfs(int x, int y)
     {
