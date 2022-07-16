@@ -4,7 +4,7 @@ public:
     int dp[55][55][55];
     bool valid(int x, int y)
     {
-        return (x>=0 && y>=0 && x<n && y<m);
+        return x>=0 && y>=0 && x<n && y<m;
     }
     int dfs(int x, int y, int remMoves)
     {
