@@ -23,10 +23,9 @@ public:
                 {
                     sum += matrix[nr][c2] - (c1>0? matrix[nr][c1-1] : 0);
                     ans+=frq[sum-target];
-                    frq[sum]+=1;
+                    frq[sum]++;
                     
-                }
-                
+                }        
                 
             }
         }
