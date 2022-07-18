@@ -5,10 +5,7 @@ public:
         
         for(int i=0; i<r; i++)
         {
-            for(int j=1; j<c; j++)
-            {
-                matrix[i][j] += matrix[i][j-1];
-            }
+            for(int j=1; j<c; j++)  matrix[i][j] += matrix[i][j-1];
         }
         
         for(int c1=0; c1<c; c1++)
