@@ -8,11 +8,11 @@ public:
         stack.insert(src);
         for(auto a:adj[src])
         {
-            if (stack.find(a) != stack.end()) return true;
-            if(!vis[a] && isCyclic(a, stack)) return true;
+            if (stack.find(a) != stack.end()) return 1;
+            if(!vis[a] && isCyclic(a, stack)) return 1;
         }
         stack.erase(*stack.find(src));        
-        return false;
+        return 0;
     }
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) 
     {       
@@ -23,9 +23,9 @@ public:
             if(!vis[i])
             {
                 set<int> st;
-                if(isCyclic(i, st)) return false;
+                if(isCyclic(i, st)) return 0;
             }
         }
-        return true;        
+        return 1;        
     }
 };
