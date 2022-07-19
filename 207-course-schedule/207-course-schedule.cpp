@@ -12,6 +12,7 @@ public:
             if(!vis[a] && isCyclic(a, stack)) return true;
         }
         stack.erase(*stack.find(src));
+        
         return false;
     }
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
