@@ -11,8 +11,7 @@ public:
             if (stack.find(a) != stack.end()) return true;
             if(!vis[a] && isCyclic(a, stack)) return true;
         }
-        stack.erase(*stack.find(src));
-        
+        stack.erase(*stack.find(src));        
         return false;
     }
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
