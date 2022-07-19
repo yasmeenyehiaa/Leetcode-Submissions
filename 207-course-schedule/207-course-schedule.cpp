@@ -17,10 +17,7 @@ public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
        
         int n = prerequisites.size();
-        for(int i=0; i<n; i++)
-        {
-            adj[prerequisites[i][0]].push_back(prerequisites[i][1]);
-        }        
+        for(int i=0; i<n; i++)  adj[prerequisites[i][0]].push_back(prerequisites[i][1]);    
         for(int i=0; i<numCourses; i++)
         {
             if(!vis[i])
