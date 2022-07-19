@@ -2,6 +2,7 @@ class Solution {
 public:
     vector<int> adj[2005];
     bool vis[2005];
+    
     bool isCyclic(int src, set<int> &stack)
     {
         vis[src] = 1;
