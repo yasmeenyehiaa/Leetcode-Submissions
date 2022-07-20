@@ -2,11 +2,11 @@ class Solution {
 public:
     int numMatchingSubseq(string s, vector<string>& words) {
         map<char, vector<int>> mp;
+        int ans = 0;
         for(int i=0; i<s.size(); i++)
         {
             mp[s[i]].push_back(i);
         }
-        int ans = 0;
         for(auto w: words)
         {
             int lst =-1, f = 1;
