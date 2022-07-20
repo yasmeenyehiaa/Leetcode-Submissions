@@ -17,7 +17,7 @@ public:
                 }
                 else f = 0;
             }
-            if(f)ans++;
+            if(f) ans++;
         }
         return ans;
     }    
