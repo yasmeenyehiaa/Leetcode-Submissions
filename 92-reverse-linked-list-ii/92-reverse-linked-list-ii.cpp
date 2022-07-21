@@ -36,7 +36,7 @@ public:
             start = start->next;
         }
         start->next = head;
-        return startCopy->val == 0? startCopy->next : headCopy;
+        return startCopy->val == 0? startCopy->next:headCopy;
         
     }
 };
