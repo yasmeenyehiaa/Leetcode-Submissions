@@ -12,9 +12,9 @@ class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int left, int right) {
         if(left == right || head == NULL) return head;        
-        int ctr = 1;
         ListNode *headCopy = head, *start = new ListNode(0);
         stack<ListNode*> st;        
+        int ctr = 1;
         while(ctr < left)
         {
             start = head;
