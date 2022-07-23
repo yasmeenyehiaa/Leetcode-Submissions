@@ -12,7 +12,6 @@ public:
         if(lx <= x && x <= m) update(2*i, x, lx, m);
         else update(2*i+1, x, m+1, rx);
         tree[i] = tree[2*i]+tree[2*i+1];
-
     }
     int query(int x, int st, int ed, int lx, int rx)
     {
