@@ -7,8 +7,7 @@ public:
             ans.push_back(-1);
             ans.push_back(-1);
             return ans;
-        }        
-        
+        }            
         int n = nums.size(), l = 0, r = n-1, a1 = -1, a2 = -1;
         while(l <= r)
         {
