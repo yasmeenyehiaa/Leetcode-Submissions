@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
         vector<int> ans;
-        if(nums.size() == 0)
+        if(nums.size()==0)
         {
             ans.push_back(-1);
             ans.push_back(-1);
