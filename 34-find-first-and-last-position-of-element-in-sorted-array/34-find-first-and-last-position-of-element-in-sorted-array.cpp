@@ -8,7 +8,7 @@ public:
             ans.push_back(-1);
             return ans;
         }            
-        int n = nums.size(), l = 0, r = n-1, a1 = -1, a2 = -1;
+        int n = nums.size(), l = 0, r = n-1, a1 = -1, a2;
         while(l <= r)
         {
             int m = (l+r)/2;
@@ -20,7 +20,7 @@ public:
             else if(nums[m] < target) l = m+1;
             else r = m-1;
         }
-        l = 0, r = n-1;
+        l = 0, r = n-1, a2 = -1;
         while(l <= r)
         {
             int m = (l+r)/2;
