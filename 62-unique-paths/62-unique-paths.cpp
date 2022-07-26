@@ -1,8 +1,8 @@
 class Solution {
 public:
+    int dp[101][101];
     int uniquePaths(int m, int n) {
-        int dp[m][n];
-        memset(dp, 0, sizeof dp);
+        //memset(dp, 0, sizeof dp);
         dp[0][0] = 1;
         for(int i=0; i<m; i++)
         {
