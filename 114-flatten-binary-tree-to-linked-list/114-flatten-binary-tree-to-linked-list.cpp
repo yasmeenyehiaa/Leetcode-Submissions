@@ -22,8 +22,7 @@ public:
             st.pop();
             
             if(top->right) st.push(top->right);
-            if(top->left)  st.push(top->left);
-            
+            if(top->left)  st.push(top->left);            
             
             if(!st.empty()) top->right = st.top();
             top->left = NULL;
