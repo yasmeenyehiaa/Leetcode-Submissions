@@ -12,7 +12,8 @@
 class Solution {
 public:
     void flatten(TreeNode* root) {
-        if(root == NULL) return;
+        if(root == NULL) 
+            return;
         
         stack<TreeNode*> st;
         st.push(root);
