@@ -21,10 +21,7 @@ public:
     }
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
         
-        for(auto v: prerequisites)
-        {
-            adj[v[1]].push_back(v[0]);
-        }
+        for(auto v: prerequisites) adj[v[1]].push_back(v[0]);
         for(int i=0; i<numCourses; i++)
         {
             if(!vis[i])
