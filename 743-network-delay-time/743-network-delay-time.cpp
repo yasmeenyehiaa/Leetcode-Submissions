@@ -4,10 +4,7 @@ public:
     vector<pair<int,int>> adj[105];
     void dijkstra(int src, int n)
     {
-        for(int i=1; i<=n; i++)
-        {
-            dis[i] = 1e9;
-        }
+        for(int i=1; i<=n; i++) dis[i] = 1e9;
         priority_queue<pair<int,int>> pq;
         pq.push({0, src});
         dis[src] = 0;
@@ -32,7 +29,6 @@ public:
         {
             int u = el[0], v = el[1], c = el[2];
             adj[u].push_back({v,c});
-            //adj[v].push_back({u,c});
         }
         dijkstra(k, n);
         int ans = 0, ctr = 1;
