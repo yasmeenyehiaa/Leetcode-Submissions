@@ -23,10 +23,7 @@ public:
         {
             for(int j=0; j<m; j++)
             {
-                if(g[i][j] == 0)
-                {
-                    ctr += dfs(i,j);
-                }
+                if(g[i][j] == 0)  ctr += dfs(i,j);
             }
         }
         return ctr;
