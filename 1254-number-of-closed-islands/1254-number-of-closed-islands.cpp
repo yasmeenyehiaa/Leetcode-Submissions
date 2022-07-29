@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int n,m, ctr;
+    int n,m,ctr;
     vector<vector<int>> g;
     bool valid(int x, int y)
     {
