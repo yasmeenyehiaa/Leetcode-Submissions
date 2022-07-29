@@ -14,7 +14,10 @@ public:
                 {
                     ok = ok && (ch == mp[pattern[i]]);
                 }
-                else mp[pattern[i]] = ch;
+                else
+                {
+                    mp[pattern[i]] = ch;
+                }
                 i++;
             }
             bool vis[28] = {0};
