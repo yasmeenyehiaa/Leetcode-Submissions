@@ -18,8 +18,7 @@ public:
             }
         }
     }
-    int numIslands(vector<vector<char>>& grid) {
-        
+    int numIslands(vector<vector<char>>& grid) {        
         g = grid;
         n = g.size(), m = g[0].size();
         for(int i=0; i<n; i++)
