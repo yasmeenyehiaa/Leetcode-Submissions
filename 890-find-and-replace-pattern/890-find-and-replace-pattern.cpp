@@ -21,7 +21,11 @@ public:
             for(auto p: mp)
             {
                 char ch = p.second;
-                if(vis[ch - 'a']) {ok = 0; break;}
+                if(vis[ch - 'a']) 
+                {
+                    ok = 0; 
+                    break;
+                }
                 vis[ch - 'a'] = 1;
             }
             if(ok) ans.push_back(w);
