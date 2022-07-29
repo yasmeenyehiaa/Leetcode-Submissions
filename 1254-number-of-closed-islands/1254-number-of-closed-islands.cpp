@@ -11,9 +11,9 @@ public:
         if(g[x][y] == 1) return 1;
         g[x][y] = 1;
         bool bottom = valid(x+1, y) && dfs(x+1,  y);
-        bool top = valid(x-1, y) && dfs(x-1,  y);
-        bool right = valid(x, y+1) && dfs(x,  y+1);
-        bool left = valid(x, y-1) && dfs(x,  y-1);
+        bool top = valid(x-1,y) && dfs(x-1,y);
+        bool right = valid(x,y+1) && dfs(x,y+1);
+        bool left = valid(x,y-1) && dfs(x,y-1);
         return (bottom && top && left && right);
     }
     int closedIsland(vector<vector<int>>& grid) {
