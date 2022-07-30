@@ -29,10 +29,7 @@ public:
                     break;
                 }
             }
-            if(ok) 
-            {
-                ans.push_back(w);
-            }
+            if(ok) ans.push_back(w);
         }
         return ans;
     }
