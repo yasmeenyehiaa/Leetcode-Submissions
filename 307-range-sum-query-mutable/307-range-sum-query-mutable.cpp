@@ -19,8 +19,7 @@ public:
     NumArray(vector<int>& num) {
         nums = num;
         n = nums.size();
-        build(1,0,n-1);
-        
+        build(1,0,n-1);        
     }
     void upd(int idx, int l, int r, int pos, int val)
     {
@@ -50,7 +49,6 @@ public:
         return query(1,0,n-1,left,right);        
     }
 };
-
 /**
  * Your NumArray object will be instantiated and called as such:
  * NumArray* obj = new NumArray(nums);
