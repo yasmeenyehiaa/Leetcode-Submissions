@@ -26,8 +26,7 @@ public:
         if(l>pos || r<pos) return;
         if(l==r) 
         {
-            tree[idx] = val;
-            nums[pos] = val;
+            tree[idx] = nums[pos] = val;            
             return;                
         }
         int m = (l+r)/2;
