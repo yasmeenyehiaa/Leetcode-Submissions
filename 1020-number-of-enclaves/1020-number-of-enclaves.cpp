@@ -20,16 +20,14 @@ public:
                 ret += dfs(nx, ny);
             }
             else ret += 1e7;
-        }
-        
+        }        
         return ret;
         
     }
     int numEnclaves(vector<vector<int>>& grid) {
         
         n = grid.size(), m = grid[0].size();
-        g = grid;
-        
+        g = grid;        
         for(int i=0; i<n; i++)
         {
             for(int j=0; j<m; j++)
