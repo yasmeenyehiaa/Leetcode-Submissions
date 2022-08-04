@@ -10,8 +10,7 @@ public:
     {
         if(g[x][y] == 0) return 0;
         g[x][y] = 0;
-        int ret = 1;
-        
+        int ret = 1;        
         for(int i=0; i<4; i++)
         {
             int nx = x+dx[i], ny = y+dy[i];
