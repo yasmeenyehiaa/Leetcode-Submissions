@@ -21,8 +21,7 @@ public:
             }
             else ret += 1e7;
         }        
-        return ret;
-        
+        return ret;        
     }
     int numEnclaves(vector<vector<int>>& grid) {
         
@@ -38,8 +37,7 @@ public:
                     if(c < 1e7) ans += c;
                 }
             }
-        }
-        
+        }        
         return ans;
     }
 };
