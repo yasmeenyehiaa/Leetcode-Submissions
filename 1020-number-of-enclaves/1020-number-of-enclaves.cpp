@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int dx[4] = {0,0,1,-1}, dy[4] = {1,-1,0,0}, ans = 0, n,m;
+    int dx[4] = {0,0,1,-1},dy[4] = {1,-1,0,0},ans = 0,n,m;
     vector<vector<int>> g;
     bool valid(int x, int y)
     {
