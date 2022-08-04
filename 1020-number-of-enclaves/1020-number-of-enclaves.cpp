@@ -4,7 +4,7 @@ public:
     vector<vector<int>> g;
     bool valid(int x, int y)
     {
-        return x>=0 &&  x<n && y>=0 && y<m; 
+        return x>=0 && x<n && y>=0 && y<m; 
     }
     int dfs(int x, int y)
     {
