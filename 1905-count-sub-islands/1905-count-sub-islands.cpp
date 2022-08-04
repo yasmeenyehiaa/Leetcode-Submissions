@@ -3,10 +3,7 @@ public:
     int dx[4] = {0,0,1,-1},dy[4] = {1,-1,0,0},ans = 0,n,m;
     vector<vector<int>> g, g2;
     bool ok = 1;
-    bool valid(int x, int y)
-    {
-        return x>=0 && x<n && y>=0 && y<m; 
-    }
+    bool valid(int x, int y) {return x>=0 && x<n && y>=0 && y<m;} 
     void dfs(int x, int y)
     {
         if(g2[x][y] == 0) ok = 0;
