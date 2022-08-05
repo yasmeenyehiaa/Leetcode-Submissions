@@ -1,18 +1,18 @@
 class Solution {
 public:
     int dx[4] = {0,0,1,-1}, dy[4] = {1,-1,0,0},n,m, P_ok, A_ok;
-    bool vis[205][205];
+    int vis[205][205], id = 1;
     bool valid(int x, int y)
     {
         return x>=0 && y>=0 && x<n && y<m;
     }
     void dfs(int x, int y, vector<vector<int>>& heights)
     {
-        vis[x][y] = 1;
+        vis[x][y] = id;
         for(int i=0; i<4; i++)
         {
             int nx = x+dx[i], ny = y+dy[i];
-            if(valid(nx,ny) && !vis[nx][ny] && heights[nx][ny] <= heights[x][y]) dfs(nx,ny,heights);
+            if(valid(nx,ny) && vis[nx][ny] != id && heights[nx][ny] <= heights[x][y]) dfs(nx,ny,heights);
             else if(nx < 0 || ny < 0) P_ok = 1;
             else if(nx >= n || ny >= m) A_ok = 1;
         }
@@ -25,7 +25,8 @@ public:
         {
             for(int j=0; j<m; j++)
             {
-                memset(vis, 0, sizeof vis);
+                //memset(vis, 0, sizeof vis);
+                id++;
                 P_ok = A_ok = 0;
                 dfs(i,j,heights);
                 if(P_ok && A_ok) 
