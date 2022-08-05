@@ -5,12 +5,12 @@ public:
         queue<pair<int,int>> q;
         q.push({headID,0});
         vector<int> adj[n];
-        int ans = 0;
         for(int i=0; i<n; i++)
         {
             if(manager[i] == -1) continue;
             adj[manager[i]].push_back(i);
-        }
+        }        
+        int ans = 0;
         while(!q.empty())
         {
             int x = q.size();
