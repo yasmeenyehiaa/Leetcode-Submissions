@@ -33,8 +33,7 @@ public:
                     }
                 }
             }
-        }
-        
+        }        
         return dist;
     }
 };
