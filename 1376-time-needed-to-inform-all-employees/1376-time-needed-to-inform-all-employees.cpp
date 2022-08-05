@@ -21,8 +21,8 @@ public:
                 for(auto a: adj[node])
                 { 
                     int tt = t + informTime[node];
-                    q.push({a, tt});
                     ans = max(ans, tt);
+                    q.push({a, tt});
                 }         
             }
         }       
