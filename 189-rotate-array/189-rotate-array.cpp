@@ -12,14 +12,11 @@ public:
         }
     }
     void rotate(vector<int>& nums, int k) {
-        
-        
+             
         int n = nums.size();
         k = k%n;
         rotateSegment(0,n-1, nums);
         rotateSegment(0,k-1 ,nums);
-        rotateSegment(k,n-1, nums);
-        
-        
+        rotateSegment(k,n-1, nums);        
     }
 };
