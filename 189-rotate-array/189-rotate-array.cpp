@@ -7,7 +7,6 @@ public:
             int tmp = nums[l];
             nums[l] = nums[r];
             nums[r] = tmp;
-            
             l++, r--;
         }
     }
