@@ -17,7 +17,6 @@ public:
     int combinationSum4(vector<int>& nums, int t) {
         memset(dp, -1, sizeof dp);
         v = nums;
-        //sort(nums.begin(), nums.end());
         return solve(0, t);
     }
 };
