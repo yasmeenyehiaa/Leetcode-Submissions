@@ -10,8 +10,7 @@ public:
         else if(target > nums[r-1])
         {
             return r;
-        }
-      
+        }      
         while(l+1 < r)
         {
             int mid = (l+r)/2;
@@ -22,7 +21,6 @@ public:
             }
             else r = mid;
         }
-        
         if(nums[ans] == target)
         {
             return ans;
