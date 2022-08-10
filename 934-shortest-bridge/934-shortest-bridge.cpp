@@ -2,7 +2,7 @@ class Solution {
 public:
     int dx[4] = {0,0,1,-1}, dy[4] = {1,-1,0,0}, n, dn = 0;
     vector<vector<int>> g;
-    vector<pair<int,int>> v1 , v2;
+    vector<pair<int,int>> v1,v2;
     bool valid(int x, int y)
     {
         return (x<n && y<n && x>=0 && y>=0);
@@ -17,8 +17,7 @@ public:
         {
             int nx=x+dx[i], ny=y+dy[i];
             if(valid(nx,ny) && g[nx][ny] == 1) dfs(nx,ny);
-        }
-        
+        }        
     }
     int shortestBridge(vector<vector<int>>& grid) {
         g = grid;
