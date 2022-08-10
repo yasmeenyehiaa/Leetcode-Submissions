@@ -4,8 +4,8 @@ public:
         int in[1005] = {0}, out[1005] = {0}; 
         for(auto p: trust)
         {
-            in[p[1]]++;
             out[p[0]]++;
+            in[p[1]]++;
         }
         for(int i=1; i<=n; i++)
         {
