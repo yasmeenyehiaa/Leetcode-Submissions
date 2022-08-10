@@ -33,7 +33,7 @@ public:
                 }
             }
         }
-        int ans = 1e9;
+        int ans = 1e8;
         for(auto p1: v1)
         {
             for(auto p2: v2)
