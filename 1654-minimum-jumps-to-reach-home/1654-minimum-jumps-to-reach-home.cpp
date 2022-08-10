@@ -8,22 +8,22 @@ public:
         while(!q.empty())
         {
             int sz = q.size();
-            for(int i = 0; i < sz; i++){
-                
+            for(int i = 0; i < sz; i++)
+            {                
                 int cur = q.front();
                 q.pop();
                 bool wasBack = (cur < 0);
                 cur = abs(cur);
-                
-                if(cur == x) return ans; 
-                
+                if(cur == x) return ans;                 
                 int nxt = cur + a;                
-                if(nxt < 10000 && visited.find(nxt) == visited.end()){
+                if(nxt < 10000 && visited.find(nxt) == visited.end())
+                {
                     visited.insert(nxt);
                     q.push(nxt);
                 }                
                 nxt = cur - b;
-                if(!wasBack && nxt > 0 && visited.find(nxt) == visited.end()){
+                if(!wasBack && nxt > 0 && visited.find(nxt) == visited.end())
+                {
                     q.push(nxt * -1);
                 }
             }
