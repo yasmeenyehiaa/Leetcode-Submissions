@@ -17,13 +17,11 @@ public:
                 
                 if(cur == x) return ans; 
                 
-                int nxt = cur + a;
-                
+                int nxt = cur + a;                
                 if(nxt < 10000 && visited.find(nxt) == visited.end()){
                     visited.insert(nxt);
                     q.push(nxt);
-                }
-                
+                }                
                 nxt = cur - b;
                 if(!wasBack && nxt > 0 && visited.find(nxt) == visited.end()){
                     q.push(nxt * -1);
