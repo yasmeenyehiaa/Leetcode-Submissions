@@ -40,8 +40,7 @@ public:
             {
                 ans = min(ans, abs(p1.first-p2.first)+abs(p1.second-p2.second)-1);
             }
-        }
-        
+        }        
         return ans;
     }
 };
