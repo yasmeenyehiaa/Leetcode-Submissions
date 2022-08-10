@@ -2,8 +2,7 @@ class Solution {
 public:
     bool dfs(int total, int jug1, int jug2, int jug, int target, vector<int>&vis)
     {
-        if(jug>total || jug<0 || vis[jug]==1) return false;
-        
+        if(jug>total || jug<0 || vis[jug]==1) return false;        
         vis[jug]=1;
         if(jug == target) return true;
         
