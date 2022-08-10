@@ -19,7 +19,7 @@ public:
                 
                 int nxt = cur + a;
                 
-                if(nxt < 6000 && visited.find(nxt) == visited.end()){
+                if(nxt < 10000 && visited.find(nxt) == visited.end()){
                     visited.insert(nxt);
                     q.push(nxt);
                 }
