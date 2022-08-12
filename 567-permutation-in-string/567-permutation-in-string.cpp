@@ -15,13 +15,13 @@ public:
         for(auto c: p) frq1[c-'a']++;
         for(int r=0; r<n; r++)
         {
-          frq2[s[r]-'a']++;
-          if(Same(frq1, frq2) == 1) return true;
-          if(r-l+1 >= p.size())
-          {
-            frq2[s[l]-'a']--;
-            l++;
-          }
+              frq2[s[r]-'a']++;
+              if(Same(frq1, frq2) == 1) return true;
+              if(r-l+1 >= p.size())
+              {
+                frq2[s[l]-'a']--;
+                l++;
+              }
         }
         return false;
         
