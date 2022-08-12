@@ -12,10 +12,7 @@ public:
                 ans.push_back(p2+1);
                 break;
             }
-            else if(numbers[p1]+numbers[p2] < target)
-            {
-                p1++;
-            }
+            else if(numbers[p1]+numbers[p2] < target) p1++;
             else p2--;
         }
         return ans;
