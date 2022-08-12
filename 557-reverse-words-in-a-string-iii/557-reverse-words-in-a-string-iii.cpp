@@ -10,7 +10,7 @@ public:
                 reverse(tmp.begin(), tmp.end());
                 ans += tmp;
                 tmp = "";
-                 ans += " ";
+                ans += " ";
             }
             else tmp += s[i];
         }
