@@ -6,7 +6,7 @@ public:
         {
           if(frq1[i] != frq2[i]) return 0;
         }
-        return true;
+        return 1;
    }
    vector<int> findAnagrams(string s, string p) {
        
