@@ -22,6 +22,7 @@ public:
           }
         }
         if(!flag) return NULL;
+        
         while(tmp!=slow)
         {
             tmp = tmp->next;
