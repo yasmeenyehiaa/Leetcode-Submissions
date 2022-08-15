@@ -6,7 +6,6 @@ public:
         if(d!=dir) return -1;
         int nxt = (i+nums[i])%(n);
         if(nxt < 0) nxt += n;
-        
         if(nxt == i) return -1;
         return nxt;
     }
