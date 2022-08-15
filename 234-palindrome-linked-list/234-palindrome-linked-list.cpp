@@ -38,7 +38,6 @@ public:
             slow = slow->next;
             node = node->next;            
         }
-        return true;
-        
+        return true;        
     }
 };
