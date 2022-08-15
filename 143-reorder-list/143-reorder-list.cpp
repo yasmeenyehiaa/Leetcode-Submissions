@@ -24,10 +24,7 @@ public:
   }
     void reorderList(ListNode* head) {
                 
-        if(head==NULL || head->next==NULL)
-        {
-            return ;
-        }
+        if(head==NULL || head->next==NULL) return;
         
         ListNode *slow = head, *fast = head;
         while(fast && fast->next)
