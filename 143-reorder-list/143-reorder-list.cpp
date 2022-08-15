@@ -44,6 +44,5 @@ public:
             second = tmp;
         }   
         if(first != NULL)  first->next = NULL;
-    }
-    
+    }    
 };
