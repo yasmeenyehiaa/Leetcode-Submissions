@@ -30,8 +30,7 @@ public:
         {
             node->val = val2;
             node->next = solve(list1, list2->next);
-        }       
-        
+        }               
         return node;
     }
     
