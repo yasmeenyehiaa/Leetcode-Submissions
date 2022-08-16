@@ -12,8 +12,7 @@ public:
             {
                 mp[s[r]]++;
                 r++;
-            }
-            
+            }            
             ans = max(ans, r-l);
             mp[s[l]]--;
         }
