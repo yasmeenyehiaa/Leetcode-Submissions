@@ -7,8 +7,7 @@ public:
         {
             ans.push_back(word);
             return;
-        }
-        
+        }        
         if(s[i] <= '9' && s[i] >= '0')
         {
             word += s[i];
