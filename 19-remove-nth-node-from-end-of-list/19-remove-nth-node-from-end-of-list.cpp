@@ -16,7 +16,7 @@ public:
         {
             fast = fast->next;
         }
-        if(!fast) return head->next;
+        if(fast == NULL) return head->next;
         while(fast && fast->next)
         {
             fast = fast->next; 
