@@ -16,8 +16,7 @@ public:
         if(list1 == NULL && list2 == NULL)
         {
             return NULL;
-        }
-        
+        }        
         ListNode * node = new ListNode();        
         int val1 = (list1? list1->val : 1000), val2 = (list2? list2->val : 1000);
         
