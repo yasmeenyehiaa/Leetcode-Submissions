@@ -12,8 +12,7 @@ public:
             mn = min(mn, nums[i]);
         }
         while(l>0 && nums[l-1] > mn) l--;
-        while(h<n-1 && nums[h+1] < mx) h++;
-        
+        while(h<n-1 && nums[h+1] < mx) h++;        
         return (h-l)+1;
     }
 };
