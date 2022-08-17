@@ -14,7 +14,7 @@ public:
                 int l = j+1, r = n-1;
                  while(l < r)
                 {
-                    long long val = (long long)arr[i]+arr[j]+arr[l]+arr[r];
+                    long long val = (long long) arr[i]+arr[j]+arr[l]+arr[r];
                     if(val == target)
                     {
                         st.insert({arr[i],arr[j],arr[l],arr[r]});
