@@ -8,8 +8,7 @@ public:
         set<vector<int>> st;
         for(int i=0; i<n-2; i++)
         {
-            int t = nums[i];
-            int p1 = i+1, p2 = n-1;
+            int t = nums[i], p1 = i+1, p2 = n-1;
             while(p1 < p2)
             {
                 if(nums[p1] + nums[p2] + t == 0)
