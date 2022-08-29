@@ -13,7 +13,6 @@ class Solution {
 public:
     vector<double> averageOfLevels(TreeNode* root) {
         vector<double> result;
-       // if(!root) return result;
         queue<TreeNode*>q;
         q.push(root);
         bool ok = 0;
