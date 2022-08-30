@@ -17,7 +17,6 @@ public:
         {
             if(i != nums[i]) return i;
         }
-        return n;
-        
+        return n;        
     }
 };
