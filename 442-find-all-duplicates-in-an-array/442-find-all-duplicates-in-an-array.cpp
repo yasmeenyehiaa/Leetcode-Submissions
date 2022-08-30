@@ -4,7 +4,7 @@ public:
         
         int i=0, n = nums.size();
         vector<int> ans;
-        while(i < n)
+        while(i<n)
         {
           int j = nums[i] - 1;
           if(nums[i] != nums[j])
