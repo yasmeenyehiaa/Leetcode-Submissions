@@ -11,18 +11,20 @@
  */
 class Solution {
 public:
-    int isGood(TreeNode* root, int mx)
+    
+    int countNodes(TreeNode* root, int mx)
     {
-        if(root == NULL)
-        {
-            return 0;
-        }
-        
-        mx = max(mx, root->val);        
-        return isGood(root->left, mx) + isGood(root->right, mx) + (mx == root->val); 
+        if(root == NULL) return 0;
+        int ret = 0;
+        if(root->val >= mx) ret++;
+        mx = max(mx, root->val);
+        ret += countNodes(root->left, mx);
+        ret += countNodes(root->right, mx);
+        return ret;
     }
     int goodNodes(TreeNode* root) 
-    {        
-        return isGood(root->left, root->val) + isGood(root->right, root->val) + 1;       
+    {
+        return countNodes(root->left, root->val) + countNodes(root->right, root->val) + 1;
     }
 };
+
