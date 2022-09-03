@@ -10,13 +10,13 @@
  */
 class Solution {
 public:
-    int totLength(ListNode *head)
+    int calc(ListNode* head)
     {
-        int c = 0;
-        while(head!= NULL)
+        int c = 0; 
+        while(head != NULL)
         {
+            head = head->next; 
             c++;
-            head = head->next;
         }
         return c;
     }
@@ -33,12 +33,12 @@ public:
             curr = nxt;
             c++;
         }
-        if(curr != NULL) head->next = reverseKGroup(curr, k, tot-k);
+        if(curr != NULL) head->next = reverseKGroup(curr, k, tot - k);
         return prv;
     }
     ListNode* reverseKGroup(ListNode* head, int k)
     {
-        int tot = totLength(head);
+        int tot = calc(head);
         return reverseKGroup(head, k, tot);
     }
 };
