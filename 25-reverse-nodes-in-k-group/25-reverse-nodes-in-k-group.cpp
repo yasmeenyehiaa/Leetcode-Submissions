@@ -12,7 +12,7 @@ class Solution {
 public:
     int totLength(ListNode *head)
     {
-        int c =  0;
+        int c = 0;
         while(head!= NULL)
         {
             c++;
