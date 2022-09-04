@@ -29,7 +29,6 @@ public:
 		}
 		for(auto p : tmp) mp[p.first].push_back(p.second);
 	}
-
 	vector<vector<int> > res;
 	for(auto kv : mp) res.push_back(kv.second);
 	return res;
