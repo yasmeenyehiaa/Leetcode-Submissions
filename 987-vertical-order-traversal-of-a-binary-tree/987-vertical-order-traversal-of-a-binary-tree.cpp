@@ -22,7 +22,7 @@ public:
 		int len=q.size();
 		for(int i=0; i<len; i++) 
         {
-			auto p=q.front();
+			auto p = q.front();
             q.pop();
 			tmp.insert(make_pair(p.first, p.second->val));
 			if (p.second->left) q.push(make_pair(p.first-1, p.second->left));
@@ -30,7 +30,7 @@ public:
 		}
 		for(auto p : tmp) mp[p.first].push_back(p.second);
 	}
-	vector<vector<int> > res;
+	vector<vector<int>> res;
 	for(auto kv : mp) res.push_back(kv.second);
 	return res;
     }
