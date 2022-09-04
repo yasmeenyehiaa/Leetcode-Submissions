@@ -14,7 +14,7 @@ public:
     vector<vector<int>> verticalTraversal(TreeNode* root) 
     {
 	map<int, vector<int> > mp;  
-	queue<pair<int, TreeNode*> > q; 
+	queue<pair<int, TreeNode*>> q; 
 	q.push(make_pair(0, root)); 
 	while(!q.empty()) 
     {
