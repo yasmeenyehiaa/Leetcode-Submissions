@@ -15,7 +15,10 @@ public:
     string tree2str(TreeNode* root) {
         if(root == NULL) return"";
         ans += to_string(root->val); 
-        if(root->left == NULL && root->right == NULL)  return to_string(root->val) + "";  
+        if(root->left == NULL && root->right == NULL)  
+        {
+            return to_string(root->val) + "";  
+        }
         if(root->right == NULL)
         {
             ans += "(";
