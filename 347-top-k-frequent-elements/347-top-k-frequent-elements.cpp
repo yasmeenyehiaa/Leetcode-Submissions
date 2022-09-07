@@ -1,5 +1,9 @@
 class Solution {
 public:
+    /*
+    [1] minheap solution     - TC: O(nlogk), SC: O(k)
+    [2] Bucket sort solution - TC: O(n), SC: O(n)    
+    */
     vector<int> topKFrequent(vector<int>& nums, int k) {
         
         int n = nums.size();
@@ -7,15 +11,13 @@ public:
         for(int i=0; i<nums.size(); i++)
         {
             freq[nums[i]]++;
-        }
-        
+        }        
         vector<vector<int>> bucket(n+1);
         for(auto p: freq)
         {
             int val = p.second, num = p.first;
             bucket[val].push_back(num);
-        }
-        
+        }        
         vector<int> ans;
         for(int i = nums.size(); k; i--)
         {
