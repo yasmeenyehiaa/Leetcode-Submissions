@@ -6,14 +6,8 @@ public:
         while(l <= r)
         {
             int m = (l+r)/2;
-            if(arr[m] > arr[m+1])
-            {
-                r = m-1;
-            }
-            else
-            {
-                l = m+1;
-            }
+            if(arr[m] > arr[m+1]) r = m-1;
+            else l = m+1;
         }
         return l;        
     }
