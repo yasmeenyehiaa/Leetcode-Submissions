@@ -14,8 +14,8 @@ public:
   bool canPartition(vector<int> &num) {
     int sum = 0;
     for(auto a: num) sum += a;
-    if(sum%2 == 1) return 0;
     memset(dp, -1, sizeof dp);
+    if(sum%2 == 1) return 0;
     return solve(0,sum/2, num);
   }
 };
