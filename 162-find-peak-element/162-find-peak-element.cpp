@@ -4,7 +4,7 @@ public:
         
         if(nums.size() == 1) return 0;
         int l = 0, r = nums.size()-1;
-        while(l < r)
+        while(l<r)
         {
             int m = (l+r)/2;
             if(nums[m] > nums[m+1]) r = m;
