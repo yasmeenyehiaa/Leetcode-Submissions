@@ -12,9 +12,9 @@
 class Solution {
 public:
     int frq[10];
-    int solve(TreeNode* root)
-    {
-        if(root == NULL) return 0;
+    int pseudoPalindromicPaths (TreeNode* root) {
+        
+       if(root == NULL) return 0;
         if(root->right == NULL && root->left == NULL)
         {
             frq[root->val]++;
@@ -24,14 +24,10 @@ public:
             return cnt <= 1;            
         }
         frq[root->val]++;
-        int ans = solve(root->left);
-        ans += solve(root->right);
+        int ans = pseudoPalindromicPaths(root->left);
+        ans += pseudoPalindromicPaths(root->right);
         frq[root->val]--;
         return ans;
-    }
-    int pseudoPalindromicPaths (TreeNode* root) {
-        
-       return solve(root);
         
     }
 };
