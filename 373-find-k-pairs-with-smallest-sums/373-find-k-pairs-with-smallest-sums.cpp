@@ -4,7 +4,6 @@ public:
         
         vector<vector<int>> ans;   
         priority_queue<pair<int,pair<int,int>>> pq;
-
         for(auto x:nums1)
         {
             for(auto y:nums2)
