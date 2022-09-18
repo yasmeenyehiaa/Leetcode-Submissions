@@ -13,12 +13,12 @@ public:
         }
         for(int i=mx; i>=0; i--)
         {
-            for(auto a: buckets[i])
+            for(auto ch: buckets[i])
             {
                 int k = i;
                 while(k--)
                 {
-                    ans += a;
+                    ans += ch;
                 }
             }
         }
