@@ -1,14 +1,11 @@
 class FreqStack {
 public:
     map<int,int> frq;
-    int sz;
+    int sz = 0;
     priority_queue<pair<int, pair<int,int>>> pq;
-    FreqStack() {
-       sz = 0;
-    }
+    FreqStack() {}
     
-    void push(int val) {
-        
+    void push(int val) {        
         frq[val]++;
         pq.push({frq[val], {++sz, val}});
     }
