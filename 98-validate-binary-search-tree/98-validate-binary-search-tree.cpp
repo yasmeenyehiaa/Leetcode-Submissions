@@ -26,3 +26,5 @@ public:
         else return false;
     }
 };
+// TC: O(n), each node is visited once
+// SC: O(n), stack space used for recursion
