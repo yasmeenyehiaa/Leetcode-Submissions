@@ -10,31 +10,27 @@
  */
 class Solution {
 public:
-   
-    ListNode* solve(ListNode* list1, ListNode* list2)
-    {
-        if(list1 == NULL && list2 == NULL)
-        {
-            return NULL;
-        }        
-        ListNode * node = new ListNode();        
-        int val1 = (list1? list1->val : 1000), val2 = (list2? list2->val : 1000);
-        
-        if(val1 < val2)
-        {
-            node->val = val1;
-            node->next = solve(list1->next, list2);
-        }
-        else
-        {
-            node->val = val2;
-            node->next = solve(list1, list2->next);
-        }               
-        return node;
-    }
     
-    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
         
-        return solve(list1,list2);
+        ListNode *dummy = new ListNode(0);
+        ListNode *root = dummy;
+        while(l1 != NULL && l2 != NULL)
+        {
+            if(l1->val < l2->val)
+            {
+                root->next = l1;
+                l1 = l1->next;
+            }
+            else 
+            {
+                root->next = l2;
+                l2 = l2->next;
+            }
+            root = root->next;
+        }
+        if(l1 != NULL) root->next = l1;
+        if(l2 != NULL) root->next = l2;
+        return dummy->next;
     }
 };
