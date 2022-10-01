@@ -14,14 +14,15 @@ public:
     
     bool isValidBST(TreeNode* root, TreeNode* left = NULL, TreeNode* right = NULL) {
         
-        if(root == NULL) return true;
-        
-        if((left !=NULL && left->val >= root->val) || (right != NULL && root->val >= right->val))
+        return isValid(root, LONG_MIN, LONG_MAX);
+    }
+    bool isValid(TreeNode *root, long long low, long long high)
+    {
+        if(root == NULL) return true;        
+        if(root->val < high && root->val > low)
         {
-            return false;
+            return isValid(root->left, low, root->val) && isValid(root->right, root->val, high);
         }
-        
-        return isValidBST(root->left, left, root) && isValidBST(root->right, root, right);
-        
+        else return false;
     }
 };
