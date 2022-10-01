@@ -14,8 +14,7 @@ public:
     
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         
-        ListNode *dummy = new ListNode(0);
-        ListNode *root = dummy;
+        ListNode *dummy = new ListNode(0), *root = dummy;
         int c = 0;
         while(l1 != NULL || l2 != NULL)
         {
