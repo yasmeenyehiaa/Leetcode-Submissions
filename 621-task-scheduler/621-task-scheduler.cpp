@@ -23,8 +23,7 @@ public:
               pq.pop();
               if(task > 0) q.push({task, intervalCount+k});
             }
-        }    
-        
+        }         
         return intervalCount;
     }
 };
