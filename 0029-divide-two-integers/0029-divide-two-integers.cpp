@@ -4,7 +4,6 @@ public:
         
         if(dividend == divisor) return 1;
         bool pos = (dividend>=0 == divisor >=0)? true:false;
-        
         unsigned int ans = 0;
         unsigned int a = abs(dividend);
         unsigned int b = abs(divisor);
