@@ -2,18 +2,18 @@ class Solution {
 public:
     bool checkAlmostEquivalent(string word1, string word2) {
         
-        map<char, int> frq1, frq2;
+        map<char, int> frq;
         for(auto ch: word1) 
         {
-            frq1[ch]++;
+            frq[ch]++;
         }
         for(auto ch: word2)
         {
-            frq2[ch]++;
+            frq[ch]--;
         }
         for(int i=0; i<26; i++)
         {
-            if(abs(frq1[i+'a'] - frq2[i+'a']) > 3)
+            if(abs(frq[i+'a']) > 3)
             {
                 return false;
             }
