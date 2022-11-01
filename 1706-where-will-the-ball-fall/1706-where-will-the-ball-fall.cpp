@@ -9,7 +9,7 @@ public:
             for(int r=0; r<grid.size(); r++)
             {
                 int nxtCol = curCol + grid[r][curCol];
-                if(nxtCol < 0 || nxtCol > grid[0].size()-1 || grid[r][curCol] != grid[r][nxtCol])
+                if(nxtCol < 0 || nxtCol >= grid[0].size() || grid[r][curCol] != grid[r][nxtCol])
                 {
                     ans[c] = -1;
                     break;
