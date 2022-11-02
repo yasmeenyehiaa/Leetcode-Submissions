@@ -1,6 +1,5 @@
 class Solution {
-public:
-    
+public:    
     int dfs(int src, vector<vector<int>> &graph, vector<bool> &vis)
     {
         if(vis[src]) return 0;
